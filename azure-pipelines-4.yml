@@ -8,7 +8,6 @@ trigger:
     include:
       - master
       - docker-repos
-- docker-repos
 
 pool:
   vmImage: ubuntu-latest
