@@ -6,7 +6,7 @@
 trigger:
  branches:
    include:
-     - docker
+     - master
 
 pool:
   vmImage: ubuntu-latest
