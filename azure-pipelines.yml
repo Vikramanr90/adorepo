@@ -4,15 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
- branches:
-   include:
-     - master
-     - docker
- paths:
-   include:
-     - vikram
-     - dhivya/first
-     - aashvi
+  branches:
+    include:
+      - master
+      - docker
+  paths:
+    include:
+      - vikram
+      - dhivya/first
+      - aashvi
 
 pool:
   vmImage: ubuntu-latest
