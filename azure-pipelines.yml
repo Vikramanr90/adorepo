@@ -10,7 +10,7 @@ trigger:
       - docker
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: debian-latest
 
 steps:
 - task: Maven@3
