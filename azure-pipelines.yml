@@ -23,8 +23,15 @@ steps:
     else
       echo "Maven is already installed."
     fi
-  displayName: 'Check and Install Maven using dpkg if necessary'
 
+    if ! dpkg-query -W -f='${Status}' git 2>/dev/null | grep -q "install ok installed"; then
+      echo "Git not found. Installing Git..."
+      sudo apt-get update
+      sudo apt-get install -y git
+    else
+      echo "Git is already installed."
+    fi
+  displayName: 'Check and Install Maven and Git if necessary'
 # Verify Maven installation
 - script: |
     mvn -version
