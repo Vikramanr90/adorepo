@@ -10,7 +10,9 @@ trigger:
      - docker
 
 pool:
-  vmImage: ubuntu-latest
+  name: vikram-first-self-agent-pool
+  demands:
+    - Agent.OS -equals Linux
 
 steps:
 - task: Maven@3
