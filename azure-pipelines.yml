@@ -11,8 +11,6 @@ trigger:
 
 pool:
   name: vikram-first-self-agent-pool
-  demands:
-    - Agent.OS -equals Linux
 
 steps:
 - script: |
