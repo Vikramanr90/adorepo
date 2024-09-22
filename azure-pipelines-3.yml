@@ -43,7 +43,8 @@ parameters:
     - script: echo step one
     - script: echo step two
 
-trigger: none
+trigger:
+  - master
 
 jobs: 
 - job: stepList
