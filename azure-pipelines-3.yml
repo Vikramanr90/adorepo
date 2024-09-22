@@ -13,6 +13,7 @@ parameters:
   default: 2
   values:
   - 1
+  - 3
   - 2
   - 4
   - 8
