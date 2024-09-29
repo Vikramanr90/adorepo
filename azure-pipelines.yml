@@ -26,4 +26,4 @@ steps:
 - task: CopyFiles@1
   inputs:
     Contents: "**/*.war"
-    TargetFolder: $(ArtifactStagingDirectory)/test-vikram.war
+    TargetFolder: $(Build.ArtifactStagingDirectory)/test-vikram.war
