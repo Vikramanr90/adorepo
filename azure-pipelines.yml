@@ -10,7 +10,7 @@ trigger:
      - docker
 
 pool:
-  name: vikram-first-self-agent-pool
+  VmImage: ubuntu-latest
 
 steps:
 
