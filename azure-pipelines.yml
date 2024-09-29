@@ -25,5 +25,6 @@ steps:
     goals: 'package'
 - task: CopyFiles@1
   inputs:
-    Contents: "**/*.war"
-    TargetFolder: $(Build.ArtifactStagingDirectory)/test-vikram.war
+    SourceFolder: /home/adoagentuser/adoagent/_work/3/s/webapp/target
+    Contents: "webapp.war"
+    TargetFolder: $(Build.ArtifactStagingDirectory)/vikraman_test_copy
