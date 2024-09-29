@@ -28,3 +28,9 @@ steps:
     SourceFolder: /home/adoagentuser/adoagent/_work/3/s/webapp/target
     Contents: "webapp.war"
     TargetFolder: $(Build.ArtifactStagingDirectory)/vikraman_test_copy
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: $(Build.ArtifactStagingDirectory)/vikraman_test_copy
+    ArtifactName: maven_build_artifact
+    publishLocation: Container
