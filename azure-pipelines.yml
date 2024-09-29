@@ -38,5 +38,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: $(Build.ArtifactStagingDirectory)/vikraman_test_copy
-    ArtifactName: maven_build_artifact
+    ArtifactName: maven_build_artifact_2
     publishLocation: Container
