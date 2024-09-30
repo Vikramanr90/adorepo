@@ -44,5 +44,5 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'current'
-    artifactName: 'maven_build_artifact'
+    #artifactName: 'maven_build_artifact'
     targetPath: '/home/adoagentuser/adoagent/_work/4-vikram'
