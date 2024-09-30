@@ -32,7 +32,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: $(Build.ArtifactStagingDirectory)/vikraman_test_copy
-    ArtifactName: maven_build_artifact
+    ArtifactName: 'maven_build_artifact'
     publishLocation: Container
 
 - task: PublishBuildArtifacts@1
@@ -40,3 +40,9 @@ steps:
     PathtoPublish: $(Build.ArtifactStagingDirectory)/vikraman_test_copy
     ArtifactName: maven_build_artifact_2
     publishLocation: Container
+
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'current'
+    artifactName: 'maven_build_artifact'
+    targetPath: '/home/adoagentuser/adoagent/_work/4-vikram'
